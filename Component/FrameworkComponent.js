@@ -34,8 +34,8 @@ export default class FrameworkComponent extends Component {
                 "div",
                 { className: 'flex mt-8' },
                 ...this.props.back.map((element) => React.createElement(
-                    "p",
-                    { className: 'mr-2 rounded-full py-2 px-4 bg-blue-100' },
+                    "a",
+                    { className: 'mr-2 rounded-full py-2 px-4 bg-blue-100', href: `${element.toLowerCase()}` },
                     element
                 ))
             ), 
@@ -48,8 +48,8 @@ export default class FrameworkComponent extends Component {
                 "div",
                 { className: 'flex mt-8' },
                 ...this.props.front.map((element) => React.createElement(
-                    "p",
-                    { className: 'mr-2 rounded-full py-2 px-4 bg-green-100' },
+                    "a",
+                    { className: 'mr-2 rounded-full py-2 px-4 bg-green-100', href: `${element.toLowerCase()}` },
                     element
                 ))
             ), 
